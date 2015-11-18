@@ -53,7 +53,13 @@ The script "run_analysis.R" is run against several text files that are listed an
 ## Program specific
 
 1.  Please reference the comments in the code of run_analysis.R for details on operations
-2.  A file is written to the working directory (from run_analysis.R) called tidy_data_set.txt
+2.  A file is written to the working directory (from run_analysis.R) called tidy_data.txt
 	+ It is a summary of the larger data set
-	+ Summarized by person, as an average per measurement, implemented using dplr functions for the heavy lifting.  
+	+ Summarized by person, as an average per measurement, implemented using dplr functions in R for grouping and summarizing.  
 	+ The measurements observed are only those related to mean or standard deviation, only 86 of the total 561
+3.  Measurements and Units
+  + 'train/Inertial Signals/total_acc_x_train.txt': The acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'. Every row shows a 128 element vector.
+  + 'total_acc_x_train.txt' and 'total_acc_z_train.txt' files for the Y and Z axis, also standard gravity units
+	+ 'train/Inertial Signals/body_acc_x_train.txt': The body acceleration signal obtained by subtracting the gravity from the total acceleration. 
+
+  +  'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second. 
